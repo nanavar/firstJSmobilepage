@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -29,19 +29,11 @@
   padding: 0 50px;
 }
 
-#navbar__logo {
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  display: flex;
-  align-items: center;
+.navbar__logo {
+  display: block;
+  height: 60px;
+  padding-top: 20px;
   cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
 }
 
 .navbar__menu {
@@ -132,7 +124,7 @@
     font-size: 1.6rem;
   }
 
-  #navbar__logo {
+  .navbar__logo {
     padding-left: 25px;
   }
 
@@ -234,11 +226,11 @@
 
 .hero__description {
   font-size: 60px;
-  background: #FEAC5E;
+  background: #feac5e;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+  background: -webkit-linear-gradient(to right, #4bc0c8, #c779d0, #feac5e);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+  background: linear-gradient(to right, #4bc0c8, #c779d0, #feac5e);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -287,11 +279,11 @@
 
 .main__content h1 {
   font-size: 2rem;
-  background: #9D50BB;
+  background: #9d50bb;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);
+  background: -webkit-linear-gradient(to right, #6e48aa, #9d50bb);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6E48AA, #9D50BB);
+  background: linear-gradient(to right, #6e48aa, #9d50bb);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -304,11 +296,11 @@
 
 .main__content h2 {
   font-size: 4rem;
-  background: #FEAC5E;
+  background: #feac5e;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+  background: -webkit-linear-gradient(to right, #4bc0c8, #c779d0, #feac5e);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+  background: linear-gradient(to right, #4bc0c8, #c779d0, #feac5e);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -350,7 +342,7 @@
 
 .main__btn:after {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 0;
@@ -473,11 +465,11 @@
 }
 
 .services h1 {
-  background: #9D50BB;
+  background: #9d50bb;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);
+  background: -webkit-linear-gradient(to right, #6e48aa, #9d50bb);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6E48AA, #9D50BB);
+  background: linear-gradient(to right, #6e48aa, #9d50bb);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -503,45 +495,28 @@
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background: #FEAC5E;
-  background: #03001e;
-  background: #4CB8C4;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #3CD3AD, #4CB8C4);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #3CD3AD, #4CB8C4);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  transition: 0.3 ease-in;
+  background-image: url(/static/images/service1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.3s ease;
 }
 
 .services__card:nth-child(2) {
-  background: #C33764;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1D2671, #C33764);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1D2671, #C33764);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url(/static/images/service2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .services__card:nth-child(3) {
-  background: #aa4b6b;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background-image: url(/static/images/service3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .services__card:nth-child(4) {
-  background: #DAE2F8;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #D6A4A4, #DAE2F8);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background-image: url(/static/images/service4.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .services__card h2 {
@@ -612,6 +587,10 @@
   font-size: 2rem;
 }
 
+.footer__logo i {
+  height: 50px;
+}
+
 .footer__links {
   width: 100%;
   max-width: 1000px;
@@ -671,7 +650,7 @@
 .social__icons {
   display: flex;
   justify-content: space-between;
-  aliign-items: center;
+  align-items: center;
   width: 240px;
 }
 
